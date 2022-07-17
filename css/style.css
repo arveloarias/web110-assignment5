@@ -2,6 +2,8 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(17,27,37,1) 68%, rgba(17,18,18,1) 100%);
 }
 
 nav ul li a{
@@ -55,6 +57,10 @@ main{
 .card-title{
     color: var(--bs-red)!important;
     font-weight: bold;
+}
+
+.navbar{
+    background-color: #0B1124;
 }
 
 .navbar-brand{
