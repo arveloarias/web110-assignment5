@@ -1,0 +1,109 @@
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+nav ul li a{
+    font-size: 20px;
+    color: var(--bs-white) !important;
+    font-weight: bold;
+
+}
+
+main{
+    display: grid;
+    justify-content: center;
+    margin: 1.5em 0px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 1em;
+}
+
+.titleh{
+    display: flex;
+    justify-content: center;
+}
+
+.titleh h1{
+    font-weight: bold !important;
+    margin-top: 1em !important;
+    color: var(--bs-white);
+    text-shadow: var(--bs-red) 10px 1px 10px;
+}
+
+.titleh img{
+    width: 200px;
+    height: auto;
+}
+
+
+.btn-close{
+    background-color: white !important;
+}
+
+
+.card{
+    margin-top: 2em;
+}
+
+
+.card-title{
+    color: var(--bs-red)!important;
+    font-weight: bold;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+}
+
+#collapsibleNavbar{
+    justify-content: flex-end ;
+    align-items: flex-start;
+}
+
+.navbar-nav{
+    align-items: flex-end;
+}
+
+
+
+.card-body button{
+    color: var(--bs-red);
+    font-weight: bold;
+    font-size: 18px;
+    background-color: transparent;
+    border: 0px;
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width:1000px){
+    
+    .main-container{
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    
+    .titleh img{
+        width: 100px;
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width:999px) and (min-width:500px){
+    
+    .titleh img{
+        width: 150px;
+        height: 100%;
+    }
+
+}
+
