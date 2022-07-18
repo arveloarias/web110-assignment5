@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- W3school recommend to use delivr for CDN link -->
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="javascript/snow.js"></script>
+    <script src="../javascript/snow.js"></script>
     
 </head>
 <body>
@@ -21,8 +21,8 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark ">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand text-danger">
-                    <img src="images/merry-christmas-bells.gif" class="rounded-pill" alt="bell gif" style="width:60px ;">
+                <a href="../index.html" class="navbar-brand text-danger">
+                    <img src="../images/merry-christmas-bells.gif" class="rounded-pill" alt="bell gif" style="width:60px ;">
                     Giant Recipes
                 </a>
 
@@ -32,17 +32,18 @@
                   <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="../index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/recipes.html" class="nav-link">Recipes</a>
+                            <a href="../pages/recipes.html" class="nav-link">Recipes</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/products.html" class="nav-link">Products</a>
+                            <a href="../pages/products.html" class="nav-link">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/contact.html" class="nav-link">Contact</a>
+                            <a href="../pages/contact.html" class="nav-link">Contact</a>
                         </li>
+                        
                     </ul>
                   </div>
                 <!-- xxx -->
@@ -52,22 +53,41 @@
     </header>
     <div class="container-fluid ">
         <div class="titleh">
-            <img src="images/Christmas-Bell-Transparent.png" alt="bell image">
+            <img src="../images/Christmas-Bell-Transparent.png" alt="bell image">
             <h1 class="text-center">Merry Christmas</h1>
-            <img src="images/Christmas-Bell-Transparent.png" alt="bell image">
+            <img src="../images/Christmas-Bell-Transparent.png" alt="bell image">
         </div>
     </div>
     <main>
-        <div class="container">
-            <div class="jumbotron">
-                <img src="images/christmas3.png" usemap="#christmas">
 
-                <map name="christmas">
-                    <area alt="Products" title="Products" href="pages/products.html" coords="300,78,490,131" shape="rect">
-                    <area alt="Recipes" title="Recipes" href="pages/recipes.html" coords="310,150,460,215" shape="rect">
-                </map>
+
+    <div class="contact">
+        <h2 class="text-center pt-3">Contact Us</h2>
+    <div class="container  py-4">
+        <form class="contactForm">
+
+            <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" id="name" type="text" placeholder="Name" />
+                </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="emailAddress">Email Address</label>
+                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+                </div>
+
+            <div class="d-grid">
+                <button id="submitBtn" class="btn btn-primary btn-lg" type="submit">Submit</button>
             </div>
-        </div>
+        </form>
+  
+    </div>
+</div>
     </main>
 
     <!-- Footer -->

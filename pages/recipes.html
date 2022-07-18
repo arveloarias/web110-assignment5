@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- W3school recommend to use delivr for CDN link -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/snow.js"></script>
+    
+</head>
+<body>
+    <canvas id="sky" style="position:fixed"></canvas>
+    <!-- head -->
+    <head>
+        <nav class="navbar navbar-expand-sm navbar-dark ">
+            <div class="container-fluid">
+                <a href="../pages/index.html" class="navbar-brand text-danger">
+                    <img src="../images/merry-christmas-bells.gif" class="rounded-pill" alt="bell gif" style="width:60px ;">
+                    Giant Recipes
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/recipes.html" class="nav-link">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/products.html" class="nav-link">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                  </div>
+                <!-- xxx -->
+                
+            </div>
+        </nav>
+    </head>
+
+    
+    <div class="container-fluid ">
+        <div class="titleh">
+            <img src="../images/Christmas-Bell-Transparent.png" alt="bell image">
+            <h1 class="text-center">Merry Christmas Recipes</h1>
+            <img src="../images/Christmas-Bell-Transparent.png" alt="bell image">
+        </div>
+        
+    </div>
+    <!-- Main Secction -->
+    <main class="container">
+            <div class="main-container text-white rounded style:background-color:#e8021d;">
+                <!-- Card -->
+                <div class="card bg-dark" style="width:300px ">
+                    <img class="card-img-top" src="../images/vegetarian-green-bean-casserole.webp" alt="Card image">
+                    <div class="card-body text-black text-center text-white">
+                      <h4 class="card-title">Green Bean Casserole</h4>
+                      <p class="card-text">This green bean casserole stays true to the classic side dish recipe you most likely know and love already, but we swap in fresh ingredients you won't find in the original soup label recipe. This is one throwback side dish that never goes out of style..</p>
+
+                      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal3">See recipe</button>
+
+                      <div class="modal" id="myModal3">
+                        <div class="modal-dialog">
+                          <div class="modal-content bg-dark">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header ">
+                              <h4 class="modal-title">Green Bean Casserole</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body text-start">
+                                <h3>You will need</h3>
+                                <p>Salt<br>
+                                    1 lb green beans<br>
+                                    1 Tbsp butter<br>
+                                    1 red onion, thinly sliced<br>
+                                    2 cloves garlic, minced<br>
+                                    6 oz cremini mushrooms, sliced<br>
+                                    2 Tbsp flour<br>
+                                    1 cup low-sodium beef or chicken stock<br>
+                                    1 cup 2% milk<br>
+                                    Black pepper to taste<br>
+                                    1⁄2 cup panko bread crumbs, tossed with 1 Tbsp olive oil</p>
+                                <h3>How to Make It</h3>
+                                <ol><li>Bring a large pot of water to a boil.</li>
+                                    <li>Season with salt and cook the green beans for about 3 minutes, until crisp-tender.</li>
+                                    <li>Drain and run cold water over the beans to help stop the cooking.</li>
+                                    <li>Preheat the oven to 475 ̊F.</li>
+                                    <li>Heat the butter in a large skillet over medium heat.</li>
+                                    <li>Add the onions and garlic and cook for about 5 minutes, until the onions are very soft and translucent.</li>
+                                    <li>Add the mushrooms and cook for about 5 minutes, until lightly browned.</li>
+                                    <li>Stir in the flour and cook for 1 minute, then add the stock and milk, whisking to help prevent lumps from forming.</li>
+                                    <li>Add the green beans and simmer for about 3 minutes, until the sauce thickens and clings to the vegetables.</li>
+                                    <li>Season to taste with salt and black pepper.</li>
+                                    <li>Pour the green beans into an 8" × 8" casserole dish and top with the bread crumbs.</li>
+                                    <li>Place on the middle rack and bake for 8 to 10 minutes, until the bread crumbs are golden brown.</li>
+                                    </ol>
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="recipe" class="collapse text-start">
+                        
+                </div>
+                <!-- End Card -->
+
+            </div>
+
+                </div>
+
+                <div class="card bg-dark" style="width:300px ">
+                <img class="card-img-top" src="../images/vegan-roasted-garlic-mashed-potatoes.webp" alt="Card image">
+                <div class="card-body text-black text-center text-white">
+                  <h4 class="card-title">Garlic Mashed Potatoes</h4>
+                  <p class="card-text">When in doubt, deciding to make mashed potatoes is never a bad idea, as they pair well with any classic main course on Christmas. You can customize the creamy side dish however you like, whether you add garlic, freshly chopped chives, bacon, sautéed spinach, roasted onions, or even peppers.</p>
+
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal2">See recipe</button>
+
+                  <div class="modal" id="myModal2">
+                    <div class="modal-dialog">
+                      <div class="modal-content bg-dark">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header ">
+                          <h4 class="modal-title">Garlic Mashed Potatoes</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body text-start">
+                            <h3>You will need</h3>
+                            <p>1 1⁄2 pounds Yukon gold potatoes, peeled (Red potatoes and russets both do the trick, but Yukon golds, with their smooth, buttery taste and texture, make for the best mash.)<br>
+                                1 &nbsp;cup low-fat milk<br>
+                                2 &nbsp;Tbsp butter<br>
+                                5-6 cloves roasted garlic<br>
+                                Salt and black pepper to taste</p>
+                            <h3>How to Make It</h3>
+                            <ol><li>Place the potatoes in a large pot of salted water and bring to a boil.</li>
+                                <li>Cook until a knife inserted into the flesh meets no resistance, about 25 minutes. Drain.</li>
+                                <li>While the potatoes boil, combine the milk, butter, and garlic in a small saucepan and heat until the butter is melted. Keep warm.</li>
+                                <li>Use a potato masher or a large wooden spoon to break up the large chunks of potatoes in a rough purée. (If you have a potato ricer, use it—nothing yields smoother mashed potatoes.)</li>
+                                <li>Slowly add the hot milk mixture to the potatoes, using a wooden spoon to beat continuously. Season with salt and black pepper.</li>
+                                </ol>
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="recipe" class="collapse text-start">
+                    
+            </div>
+            <!-- End Card -->
+
+        </div>
+
+                </div>
+
+                <div class="card bg-dark" style="width:300px ">
+            <img class="card-img-top" src="../images/healthy-sunday-roast-chicken.webp" alt="Card image">
+            <div class="card-body text-black text-center text-white">
+              <h4 class="card-title">Tastiest Sunday Roast Chicken</h4>
+              <p class="card-text">Yes, you can make this dish any day of the week, and it happens to make for the perfect Christmas dinner. The key to this roasted chicken is seasoning it long before you start cooking so that it will create a juicier roast.</p>
+
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">See recipe</button>
+
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-dark">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header ">
+                      <h4 class="modal-title">Tastiest Sunday Roast Chicken</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body text-start">
+                        <h3>You will need</h3>
+                        <ul>
+                              <li>1 whole chicken (about 4 lbs)</li>
+                              <li>2 Tbsp fresh thyme leaves</li>
+                              <li>1 Tbsp Dijon mustard</li>
+                              <li>4 cloves garlic, minced</li>
+                              <li>Grated zest of 1 lemon</li>
+                              <li>2 Tbsp olive oil</li>
+                              <li>Salt and black pepper to taste</li>
+                              <li>2 medium onions, quartered</li>
+                              <li>2 cups peeled and chopped butternut squash (The chicken can be roasted with any firm vegetables: potatoes, carrots, parsnips, turnips. Vary at will; just be sure to cut into equal pieces.)</li>
+                              <li>4 cups Brussels sprouts, ends removed</li>
+                        </ul>
+                        <h3>How to Make It</h3>
+                        <ol>
+                              <li>The morning of the day you roast the chicken, rinse it and pat it dry.</li>
+                              <li>Combine the thyme, mustard, garlic, lemon zest, and 1 tablespoon olive oil and rub over the chicken.</li>
+                              <li>Season the chicken with salt and black pepper.</li>
+                              <li>Refrigerate until you're ready to cook, up to 12 hours.</li>
+                              <li>Preheat the oven to 425°F.</li>
+                              <li>Place the vegetables in a large roasting pan.</li>
+                              <li>Add the remaining 1 tablespoon olive oil, plus salt and pepper, and toss.</li>
+                              <li>Use kitchen twine to tie the chicken legs together with a knot at the end of the drumsticks.</li>
+                              <li>Use another piece of twine to tie the wings together tight against the body of the chicken by looping the string around the wing tip, then running it under the chicken back.</li>
+                              <li>Place the chicken in the roasting pan and roast on the middle rack for 45 to 55 minutes, until the skin is deeply browned and an instant-read thermometer inserted into the thigh registers 170°F.</li>
+                              <li>Rest the chicken for 10 minutes before carving and serving with the vegetables.</li>
+                          </ol>
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+
+              <div id="recipe" class="collapse text-start">
+                
+        </div>
+        <!-- End Card -->
+
+    </div>
+
+                </div>
+
+                <div class="card bg-dark" style="width:300px ">
+        <img class="card-img-top" src="../images/low-calorie-flaky-southern-biscuits.webp" alt="Card image">
+        <div class="card-body text-black text-center text-white">
+          <h4 class="card-title">Southern-Style Biscuits</h4>
+          <p class="card-text">A warm, perfectly flaky biscuit is a necessity at your Christmas dinner table. And you'll want to try our Easy Homemade Gravy Recipe alongside these pillowy delights, too. Topped with warm butter and savory gravy, these biscuits just might steal the show this year.</p>
+
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal5">See recipe</button>
+
+          <div class="modal" id="myModal5">
+            <div class="modal-dialog">
+              <div class="modal-content bg-dark">
+          
+                <!-- Modal Header -->
+                <div class="modal-header ">
+                  <h4 class="modal-title">Southern-Style Biscuits</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body text-start">
+                    <h3>You will need</h3>
+                    <p>2 cups all-purpose flour<br>
+                        4 Tbsp cold butter<br>
+                        4 tsp baking powder<br>
+                        1⁄4 tsp baking soda<br>
+                        1⁄2 tsp salt<br>
+                        1 cup low-fat buttermilk</p>
+                    <h3>How to Make It</h3>
+                    <ol><li>Preheat the oven to 425°F.</li>
+                        <li>Combine the flour, butter, baking powder, baking soda, and salt in a large mixing bowl.</li>
+                        <li>Use your fingers to break up the butter, mashing it into the flour to create little pebbles.</li>
+                        <li>When the flour and butter have been combined, make a well in the center of the mixture and pour in the buttermilk.</li>
+                        <li>Use a fork to gently bring the dough together.</li>
+                        <li>Dump the dough out onto a floured surface and pat it out into a square.</li>
+                        <li>Gently fold the dough onto itself four or five times (this action helps create tall, delicate biscuits), then roll it out to form a 1"-thick circle.</li>
+                        <li>Use a round cookie cutter (or even a drinking glass) to cut out the biscuits. (You should get about 6 from the original circle.)</li>
+                        <li>Re-form another circle and repeat.</li>
+                        <li>You should have about 10 biscuits in total.</li>
+                        <li>Arrange the biscuits on a baking sheet coated with nonstick spray.</li>
+                        <li>Bake on the middle rack for 10 to 12 minutes, until golden brown.</li>
+                        </ol>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+          <div id="recipe" class="collapse text-start">
+            
+    </div>
+    <!-- End Card -->
+
+</div>
+
+                </div>
+
+                <div class="card bg-dark" style="width:300px ">
+    <img class="card-img-top" src="../images/eggnog-2.webp" alt="Card image">
+    <div class="card-body text-black text-center text-white">
+      <h4 class="card-title">Eggnog</h4>
+      <p class="card-text">Yes, we already have dessert on the brain, and there is nothing quite like sipping on some eggnog while sitting by the Christmas tree. Plus, this recipe is super simple to make, thanks to your secret weapon: a Crock-Pot!</p>
+
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal4">See recipe</button>
+
+      <div class="modal" id="myModal4">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark">
+      
+            <!-- Modal Header -->
+            <div class="modal-header ">
+              <h4 class="modal-title">Eggnog</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body text-start">
+                <h3>You will need</h3>
+                <p>6 egg yolks<br>
+                    6 egg whites<br>
+                    1 cup sugar<br>
+                    3 cups milk<br>
+                    1 cup heavy whipping cream<br>
+                    1/2 cup liquor of choice (bourbon, rum, rye, cognac, etc.)<br>
+                    Cinnamon and nutmeg (for topping)</p>
+                <h3>How to Make It</h3>
+                <ol><li>Separate egg yolks from the egg whites using two bowls.</li>
+                    <li>Whisk in 1 cup of sugar into the egg yolks.</li>
+                    <li>Add in the 3 cups of milk, then 1 cup of heavy whipping cream. Whisk together.</li>
+                    <li>Add in the desired amount of alcohol, or just leave it plain.</li>
+                    <li>Wrap up the top and place in the fridge for 1 hour.</li>
+                    <li>Pour the mixture into a slow cooker.</li>
+                    <li>Cook the eggnog mixture in the slow cooker for 1 1/2 to 2 hours on low.</li>
+                    <li>While the eggnog is cooking, whisk the egg whites until they are frothy and make soft, stiff peaks. You'll know they are stiff if you take out the whisk and the peaks stand on their own.</li>
+                    <li>Serve in mugs with whipped cream on top, with a sprinkle of cinnamon and nutmeg.</li>
+                    </ol>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+      <div id="recipe" class="collapse text-start">
+        
+</div>
+<!-- End Card -->
+
+</div>
+
+                </div>
+
+                <div class="card bg-dark" style="width:300px ">
+    <img class="card-img-top" src="../images/healthy-orange-cranberry-relish.webp" alt="Card image">
+    <div class="card-body text-black text-center text-white">
+      <h4 class="card-title">Cranberry Orange Relish</h4>
+      <p class="card-text">Perhaps it's the color of cranberry that makes it the perfect addition to a Christmas feast, but this cranberry orange relish is a must. And you just might catch some of your family members coming back for more helpings by the spoonful—we won't judge.</p>
+
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal6">See recipe</button>
+
+      <div class="modal" id="myModal6">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark">
+      
+            <!-- Modal Header -->
+            <div class="modal-header ">
+              <h4 class="modal-title">Cranberry Orange Relish</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body text-start">
+                <h3>You will need</h3>
+                <p>1 bag (12oz) frozen cranberries<br>
+                    Zest and juice from 1 orange<br>
+                    1⁄3 cup sugar, plus more if needed<br>
+                    1 tsp fresh grated ginger</p>
+                <h3>How to Make It</h3>
+                <ol><li>Combine the cranberries, orange juice, sugar, and ginger in a saucepan set over medium heat.</li>
+                    <li>Simmer for 20 to 25 minutes, until the cranberries break down to form a thick sauce.</li>
+                    <li>Taste and adjust the sweetness with more sugar if necessary.</li>
+                    <li>Add the orange zest just before serving.</li>
+                    </ol>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+      <div id="recipe" class="collapse text-start">
+        
+</div>
+<!-- End Card -->
+
+</div>
+
+                </div>
+            </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-dark ">
+          © 2022 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+</html>
